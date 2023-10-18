@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessing Elements in the DOM</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      #upper1, #lower1, #number1, #length1{
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    password: <input onkeyup="passwordValidation(event)" type="text" id="password" />
+
+    <ul>
+      <li id="upper">
+        There should be atleat one uppercase character.
+        <i id="upper1"  class="fa fa-check" aria-hidden="true"></i>
+      </li>
+      <li id="lower">
+        There should be atleat one lowercase character.
+        <i id="lower1" class="fa fa-check" aria-hidden="true"></i>
+      </li>
+      <li id="number">
+        There should be atleat one number.
+        <i id="number1" class="fa fa-check" aria-hidden="true"></i>
+      </li>
+      <li id="length">
+        Length should be 8 or more character.
+        <i id="length1" class="fa fa-check" aria-hidden="true"></i>
+      </li>
+    </ul>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
